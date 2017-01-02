@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1483352611 source:/home/vaibhav/deja-dup/Github/Github_Working/Algorithms/inorderTraversalWithoutRecursion/main.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+

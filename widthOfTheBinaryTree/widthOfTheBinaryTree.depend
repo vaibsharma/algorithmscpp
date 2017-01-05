@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1483448247 source:/home/vaibhav/deja-dup/Github/Github_Working/Algorithms/widthOfTheBinaryTree/main.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+

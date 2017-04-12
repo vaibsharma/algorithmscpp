@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1491673756 source:/home/vaibhav/deja-dup/Github/Github_Working/Algorithms/google_codeJam/main.cpp
+	<iostream>
+	<cstdio>
+	<string>
+	<cmath>
+	<cstdlib>
+

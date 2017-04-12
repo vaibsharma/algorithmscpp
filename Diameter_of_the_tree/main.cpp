@@ -1,13 +1,14 @@
 #include <iostream>
 #include <cstdio>
 #include <cmath>
+
 using namespace std;
 
 struct node{
     int key;
     struct node* left_child = NULL;
     struct node* right_child = NULL;
-    int height = 0 ;
+          int height = 0 ;
 };
 
 int Diameter = 0 ;
@@ -35,6 +36,7 @@ int main()
 
 
     calDiameter(root);
+    cout<<"Diameter of this tree is "<<Diameter ;
 
     return 0 ;
 }

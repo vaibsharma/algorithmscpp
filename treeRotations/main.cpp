@@ -34,7 +34,8 @@ int main()
     return 0;
 }
 void add(treeNode** root,int key){
-    int height(treeNode**);
+    int height(treeNode**),lHeight=0,rHeight=0;
+    void rrRotate(treeNode**),rlRotate(treeNode**),llRotate(treeNode**),lrRotate(treeNode**);
     treeNode* rootA = *root;
     treeNode* block = new treeNode;
     if(block && !rootA){
@@ -64,7 +65,20 @@ void add(treeNode** root,int key){
             add(&rootA->rightChild,key);
 
         }
-        rootA->height = max(height(&rootA->leftChild),height(&rootA->rightChild)) + 1;
+        lHeight = height(&rootA->leftChild);
+        rHeight = height(&rootA->rightChild);
+        rootA->height = max(lHeight,rHeight) + 1;
+        if(abs(lHeight-rHeight)>1){
+            if(rHeight>lHeight){
+                if(height(&rootA->rightChild->rightChild) > height(&rootA->rightChild->leftChild)) llRotate(&rootA);
+                else lrRotate(&rootA);
+            }
+            else{
+                if(height(&rootA->leftChild->leftChild) > height(&rootA->leftChild->rightChild)) rlRotate(&rootA);
+                else rlRotate(&rootA);
+            }
+        }
+        *root = rootA;
     }
     cout<<"End of add for key "<<key<<"\n";
 }
@@ -94,4 +108,36 @@ int height(treeNode** root){
         cout<<"Height of "<<rootA->key<<" is "<<rootA->height<<"\n";
         return rootA->height;
     }
+}
+void rrRotate(treeNode** root){
+    treeNode *rootA = *root;
+    treeNode *leftChild = rootA->leftChild;
+    rootA->leftChild = leftChild->rightChild;
+    leftChild->rightChild = rootA;
+    *root = leftChild;
+}
+
+void llRotate(treeNode** root){
+    treeNode *rootA = *root;
+    treeNode *rightChild = rootA->rightChild;
+    rootA->rightChild = rightChild->leftChild;
+    rightChild->leftChild = rootA;
+    *root = rightChild;
+}
+
+void lrRotate(treeNode** root){
+    treeNode *rootA = *root;
+    treeNode *rightChild = rootA->rightChild;
+    rrRotate(&rightChild);
+    rootA->rightChild = rightChild->leftChild;
+    rightChild->leftChild = rootA;
+    *root = rightChild;
+}
+void rlRotate(treeNode** root){
+    treeNode *rootA = *root;
+    treeNode *leftChild = rootA->leftChild;
+    llRotate(&leftChild);
+    rootA->leftChild = leftChild->rightChild;
+    leftChild->rightChild = rootA;
+    *root = leftChild;
 }

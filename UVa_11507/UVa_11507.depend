@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1492680638 source:/home/vaibhav/deja-dup/Github/Github_Working/Algorithms/UVa_11507/main.cpp
+	<iostream>
+	<cstdio>
+	<string>
+	<vector>
+

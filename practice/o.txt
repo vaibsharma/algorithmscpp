@@ -1,0 +1,91 @@
+1 1 
+1 0 
+1 1 
+
+
+changes made
+1 1 
+1 1 
+1 0 
+
+
+changes made
+1 1 
+1 1 
+0 1 
+
+
+changes made
+1 1 
+0 1 
+1 1 
+
+
+changes made
+1 1 
+1 0 
+1 1 
+
+
+changes made
+1 1 
+1 0 
+0 0 
+
+
+changes made
+1 1 
+1 0 
+0 1 
+
+
+changes made
+1 1 
+1 0 
+1 0 
+
+
+changes made
+1 1 
+0 1 
+1 0 
+
+
+changes made
+0 1 
+1 1 
+1 0 
+
+
+changes made
+1 0 
+1 1 
+1 0 
+
+
+changes made
+1 0 
+0 0 
+1 0 
+
+
+changes made
+1 0 
+0 1 
+1 0 
+
+
+changes made
+1 0 
+1 0 
+1 0 
+
+
+changes made
+0 1 
+1 0 
+1 0 
+
+
+changes made
+15

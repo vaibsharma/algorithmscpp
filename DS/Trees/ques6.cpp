@@ -1,4 +1,5 @@
 // Post Order Traversal Iterative
+// Need to change it
 
 #include<iostream>
 #include<cstdio>
@@ -48,7 +49,7 @@ node* pop(stack** st){
 }
 
 void postOrderTraversal(node* root){
-  stack *s = NULL;
+  stack *s = NULL,right* = NULL;
   while(root){
     push(&s,root);
     root = root->leftChild;
